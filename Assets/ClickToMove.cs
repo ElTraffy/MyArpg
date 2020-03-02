@@ -39,6 +39,8 @@ public class ClickToMove : MonoBehaviour
 
     void moveToPosition()
     {
+        //double const eps = 1e-12;
+
         if (Vector3.Distance(transform.position, position) > 1) //makes character stop when reaching destination
         {
             Quaternion newRotation = Quaternion.LookRotation(position - transform.position, Vector3.forward);
@@ -46,10 +48,11 @@ public class ClickToMove : MonoBehaviour
             newRotation.x = 0f;
             newRotation.z = 0f;
 
-            transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 10);
+            transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 15);
             controller.SimpleMove(transform.forward * speed);
+            //if (Quaternion.identity.y - newRotation.y < const) controller.SimpleMove(transform.forward * speed); tentativa de forçar player a virar e depois andar
         }
-        
+
 
     }
 }
