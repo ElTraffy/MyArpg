@@ -13,7 +13,6 @@ public class Mob : MonoBehaviour
     private Animator mAnimator;
     private bool mRunning = false;
     private bool mAttack = false;
-    private bool seen = false;
 
     void Start()
     {
@@ -60,4 +59,10 @@ public class Mob : MonoBehaviour
     {
         mAgent.destination = player.position;
     }
+    /*
+    void OnMouseOver()
+    {
+        player.GetOponent<combatPlayer>().opponent = GameObject;
+    }
+    */
 }

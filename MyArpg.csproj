@@ -618,9 +618,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\ClickToMove_lowVersion.cs" />
+    <Compile Include="Assets\Scripts\CombatPlayer.cs" />
     <Compile Include="Assets\Scripts\Mob.cs" />
-    <Compile Include="Assets\Scripts\playerMovement.cs" />
-    <Compile Include="Assets\Scripts\smooth_follow.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Smooth_follow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\imports\Fantasy Chess RPG Character - Arthur\readme.txt" />

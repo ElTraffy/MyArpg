@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI; //allows us to use navigation mesh
 
-public class playerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     private Animator mAnimator;
 
